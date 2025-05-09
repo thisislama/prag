@@ -1,0 +1,155 @@
+/* General Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #ffe6cd;
+    text-align: left;
+    margin: 0;
+    padding: 0;
+    background-image: url("img/p3.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-blend-mode: multiply;
+    background-position: revert;
+}
+
+/*More sympol*/
+
+
+.wrapper button{
+    border-radius: 65px;
+    border-color: transparent;
+    background-color: transparent;
+    font-size: 25px;
+    color: #291f15;
+    margin: 20px;
+    cursor: pointer;
+}
+
+/* Language button */
+.language-toggle {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 100;
+
+}
+
+.language-toggle button {
+    background-color: rgba(188, 143, 110, 0.82);
+    color: #fff;
+    font-size: 12px;
+    border: none;
+    width: 25px;
+    height: auto;
+    border-radius: 65px;
+    cursor: pointer;
+}
+
+.language-toggle button:hover {
+    background-color: rgba(124, 86, 58, 0.82);
+}
+
+.title{
+    text-align: center;
+    margin: 20px;
+    padding: 25px;
+    font-size: 21px;
+}
+
+.title h1{
+    font-family: Serif, sans-serif;
+    color: #291f15;
+    font-weight: bolder;
+}
+.title span{
+    font-weight: normal;
+    color: #634c34;
+
+}
+
+.tagline {
+    font-family: Serif,sans-serif;
+    text-align: center;
+    font-size: 10px;
+    display: block;
+    position: absolute;
+    top: 210px;
+    color: rgba(184, 180, 176, 0.78);
+    margin: 20px;
+}
+
+/* Button styles */
+.custom-btn {
+    display: inline-flex;
+    align-items: center;
+    background-color: rgb(128, 85, 58);
+    color: white;
+    padding: 14px 28px;
+    border-radius: 50px;
+    font-size: 1rem;
+    text-decoration: none;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    margin-left: 15px;
+    margin-top: 30px;
+}
+
+.custom-btn:hover {
+    background-color: rgba(74, 39, 16, 0.82);
+}
+
+.custom-btn span {
+    margin-left: 10px;
+    font-size: 18px;
+}
+
+/* Media Queries for iPhone 14 and mobile screens */
+
+/* For small screens like iPhone 14 */
+@media only screen and (max-width: 600px) {
+    .title h1 {
+        font-size: 1.8rem; /* Adjust title font size */
+    }
+
+    .tagline {
+        font-size: 1rem; /* Adjust tagline font size */
+    }
+
+    .custom-btn {
+        padding: 12px 24px; /* Smaller padding for the button */
+        font-size: 0.9rem; /* Adjust button font size */
+    }
+
+    .language-toggle button {
+        font-size: 14px; /* Smaller font for the language button */
+        padding: 8px 16px;
+    }
+
+    .img-container {
+        width: 100%;
+        height: 200px; /* Adjust height for images on mobile */
+        overflow: hidden;
+    }
+
+    .img-container img {
+        width: 100%;
+        height: auto;
+        object-fit: cover; /* Ensure the image fits properly */
+    }
+}
+
+/* For very small screens (e.g., portrait iPhone SE) */
+@media only screen and (max-width: 400px) {
+    .title h1 {
+        font-size: 1.6rem; /* Even smaller font size */
+    }
+
+    .tagline {
+        font-size: 0.9rem; /* Further reduce font size */
+    }
+
+    .custom-btn {
+        padding: 10px 20px;
+        font-size: 0.8rem;
+    }
+}

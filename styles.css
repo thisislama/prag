@@ -1,0 +1,178 @@
+@import url('https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400;1,700&family=BIZ+UDGothic&family=BIZ+UDPGothic&family=Harmattan:wght@400;500;600;700&family=Lora:ital,wght@0,400..700;1,400..700&family=Marhey:wght@300..700&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Noto+Sans+Devanagari:wght@100..900&family=Oswald:wght@200..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400;1,700&family=BIZ+UDGothic&family=BIZ+UDPGothic&family=Harmattan:wght@400;500;600;700&family=Lora:ital,wght@0,400..700;1,400..700&family=Marhey:wght@300..700&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Noto+Sans+Devanagari:wght@100..900&family=Oswald:wght@200..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Readex+Pro:wght@160..700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #fff;
+    background-image: url("img/571abc52a6f15ba912b3f8e669e6c095.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    /*background-size: 83%;  Change from 100% to cover */
+    background-position: top center;
+}
+
+
+.title{
+    text-align: center;
+    margin: 20px;
+    padding: 25px;
+    font-size: 21px;
+}
+
+.title h1{
+    font-family: Serif, sans-serif;
+    color: #291f15;
+    font-weight: bolder;
+}
+.title span{
+    font-weight: normal;
+    color: #634c34;
+
+}
+
+.tagline{
+    font-family: Serif,sans-serif;
+    text-align: center;
+    /*position: absolute;*/
+    margin-top: -28px;
+    color: rgba(184, 180, 176, 0.78);
+}
+
+/*Button Style*/
+.button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.custom-btn {
+    display: inline-flex;
+    align-items: center;
+    background-color: #2d2d2d; /* Dark button background */
+    color: white;
+    padding: 15px 30px;
+    border-radius: 50px;
+    font-size: 16px;
+    text-decoration: none;
+    font-weight: 500;
+    border: 2px solid #2d2d2d;
+    transition: all 0.3s ease;
+    position: absolute;
+    top:560px;
+}
+
+.custom-btn:hover {
+    background-color: #1c7000; /* Hover effect */
+    border-color: #00670e;
+}
+
+.custom-btn span {
+    margin-left: 10px;
+    font-size: 18px;
+}
+/*-----------NAV BAR-------------------*/
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: transparent;
+}
+
+li {
+    float: right;
+}
+
+li a {
+    display: block;
+    color: #291f15;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: transparent;
+    border-radius: 75px;
+    border: #291f15 0.096em solid;
+}
+
+/* Language Button Styles */
+.language-toggle {
+    position: fixed;
+    float: left;
+    top: -20px;
+    z-index: 1000;
+    margin: 35px;
+}
+
+.language-toggle button {
+    background-color: rgba(60, 60, 60, 0.39);
+    color: #fff;
+    font-size: 12px;
+    padding: 10px 10px;
+    border: none;
+    border-radius: 55px;
+    cursor: pointer;
+}
+
+.language-toggle button:hover {
+    background-color: #1c7000; /* Hover effect */
+}
+
+.sec {
+    background-color: #87816c;
+}
+
+/*-----------------ARABIC STYLES------------------------*/
+
+/* Arabic-specific styles (applied when .rtl class is added) */
+body.rtl {
+    font-family: 'Harmattan', sans-serif; /* You can change the font if needed for Arabic */
+    text-align: right; /* Align text to the right for Arabic */
+}
+
+/* You can also add specific styles for elements */
+body.rtl .tagline {
+    font-size: 18px;
+    text-align: center;
+    margin-top: -43px;
+    color: rgba(184, 180, 176, 0.78);
+    font-family: 'Harmattan', sans-serif;
+
+}
+
+body.rtl .title{
+    text-align: center;
+    margin: 20px;
+    padding: 15px;
+    font-size: 21px;
+    display: block;
+}
+
+body.rtl .title h1 {
+    font-family: 'Amiri', sans-serif;
+    font-weight: 800;
+   /* font-style: oblique;*/
+    font-size: 44px;
+}
+
+body.rtl .title em {
+    font-size: 40px;
+    font-weight: normal;
+    font-family: 'Amiri', sans-serif;
+    font-style: normal;
+
+}
+
+body.rtl .custom-btn {
+    padding: 14px 28px;
+    font-size: 24px;
+    border-radius: 55px;
+
+}
